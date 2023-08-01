@@ -13,6 +13,7 @@ const Navbar = ({ menu1, menu2 }) => {
 
   const [isMenu1Active, setMenu1Active] = useState(false);
   const [isMenu2Active, setMenu2Active] = useState(false);
+  const [isMenu3Active, setMenu3Active] = useState(true);
 
   return (
     <div className="Navbar">
@@ -24,6 +25,7 @@ const Navbar = ({ menu1, menu2 }) => {
               onClick={() => {
                 setMenu1Active(true);
                 setMenu2Active(false);
+                setMenu3Active(false);
               }}
               className={`text-sm bg-white/[.09] mr-4 p-2 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2] ${
                 isMenu1Active ? "bg-white/[0.2]" : ""
@@ -36,6 +38,7 @@ const Navbar = ({ menu1, menu2 }) => {
               onClick={() => {
                 setMenu1Active(false);
                 setMenu2Active(true);
+                setMenu3Active(false);
               }}
               className={`text-sm bg-white/[.09] p-2 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2] ${
                 isMenu2Active ? "bg-white/[0.2]" : ""
@@ -47,7 +50,14 @@ const Navbar = ({ menu1, menu2 }) => {
           <div className="flex justify-end lg:justify-center lg:w-60 items-center">
             <Link
               href="/"
-              className={"p-2 text-xl font-bold hover:text-amber-200"}
+              onClick={() => {
+                setMenu1Active(false);
+                setMenu2Active(false);
+                setMenu3Active(true);
+              }}
+              className={`p-2 text-xl font-bold hover:text-amber-200 ${
+                isMenu3Active ? "text-amber-200" : ""
+              }`}
             >
               Yondika
             </Link>
