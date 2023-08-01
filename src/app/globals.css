@@ -17,11 +17,17 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  overflow-x: hidden;
+}
+
+.my_className {
+  background: white;
+  color: black;
+}
+.my_className:active,
+.my_className:selected,
+.my_className:hover {
+  background: red;
 }
