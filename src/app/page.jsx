@@ -18,51 +18,33 @@ export default function Home() {
             My Advantage
           </h2>
           <div className="flex flex-row justify-around mt-12 lg:my-24 flex-wrap text-center">
-            <SkillsCard
-              text="BootstrapCSS"
-              children={
-                <img
-                  src="../assets/images/bootstrap-logo.svg"
-                  alt="BootstrapCSS"
-                />
-              }
-            />
-            <SkillsCard
-              text="TailwindCSS"
-              children={
-                <img
-                  src="../assets/images/tailwindcss-logo.svg"
-                  alt="TailwindCSS"
-                />
-              }
-            />
-            <SkillsCard
-              text="JavaScript"
-              children={
-                <img
-                  src="../assets/images/javascript-logo.svg"
-                  alt="JavaScript"
-                />
-              }
-            />
-            <SkillsCard
-              text="ReactJS"
-              children={
-                <img src="../assets/images/react-logo.svg" alt="ReactJS" />
-              }
-            />
-            <SkillsCard
-              text="Next.js"
-              children={
-                <img src="../assets/images/next-logo.svg" alt="Next.js" />
-              }
-            />
-            <SkillsCard
-              text="Figma"
-              children={
-                <img src="../assets/images/figma-logo.svg" alt="Figma" />
-              }
-            />
+            <SkillsCard text="BootstrapCSS">
+              <img
+                src="../assets/images/bootstrap-logo.svg"
+                alt="BootstrapCSS"
+              />
+            </SkillsCard>
+            <SkillsCard text="TailwindCSS">
+              <img
+                src="../assets/images/tailwindcss-logo.svg"
+                alt="TailwindCSS"
+              />
+            </SkillsCard>
+            <SkillsCard text="JavaScript">
+              <img
+                src="../assets/images/javascript-logo.svg"
+                alt="JavaScript"
+              />
+            </SkillsCard>
+            <SkillsCard text="ReactJS">
+              <img src="../assets/images/react-logo.svg" alt="ReactJS" />
+            </SkillsCard>
+            <SkillsCard text="Next.js">
+              <img src="../assets/images/next-logo.svg" alt="Next.js" />
+            </SkillsCard>
+            <SkillsCard text="Figma">
+              <img src="../assets/images/figma-logo.svg" alt="Figma" />
+            </SkillsCard>
           </div>
         </div>
       </section>
