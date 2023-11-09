@@ -20,27 +20,48 @@ export default function Home() {
           <div className="flex flex-row justify-around mt-12 lg:my-24 flex-wrap text-center">
             <SkillsCard
               text="BootstrapCSS"
-              children="../assets/images/bootstrap-logo.svg"
+              children={
+                <img
+                  src="../assets/images/bootstrap-logo.svg"
+                  alt="BootstrapCSS"
+                />
+              }
             />
             <SkillsCard
               text="TailwindCSS"
-              children="../assets/images/tailwindcss-logo.svg"
+              children={
+                <img
+                  src="../assets/images/tailwindcss-logo.svg"
+                  alt="TailwindCSS"
+                />
+              }
             />
             <SkillsCard
               text="JavaScript"
-              children="../assets/images/javascript-logo.svg"
+              children={
+                <img
+                  src="../assets/images/javascript-logo.svg"
+                  alt="JavaScript"
+                />
+              }
             />
             <SkillsCard
               text="ReactJS"
-              children="../assets/images/react-logo.svg"
+              children={
+                <img src="../assets/images/react-logo.svg" alt="ReactJS" />
+              }
             />
             <SkillsCard
               text="Next.js"
-              children="../assets/images/next-logo.svg"
+              children={
+                <img src="../assets/images/next-logo.svg" alt="Next.js" />
+              }
             />
             <SkillsCard
               text="Figma"
-              children="../assets/images/figma-logo.svg"
+              children={
+                <img src="../assets/images/figma-logo.svg" alt="Figma" />
+              }
             />
           </div>
         </div>
