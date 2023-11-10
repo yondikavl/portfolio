@@ -11,7 +11,7 @@ const Works = () => {
     <div>
       <section className="Porfolio">
         <div className="w-screen my-24 px-6 lg:px-40 text-white">
-          <div className="pt-12 md:pt-20 flex justify-between">
+          <div className="pt-12 md:pt-20 flex justify-between flex-col md:flex-row gap-8">
             <h2 className="text-xl lg:text-2xl font-bold  text-white">
               My Projects
             </h2>
@@ -50,7 +50,7 @@ const Works = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-row lg:justify-between mt-12 lg:mt-24 flex-wrap text-left justify-center gap-20">
+          <div className="flex flex-row lg:justify-between mt-12 lg:mt-24 flex-wrap text-left justify-center gap-4 md:gap-20">
             <Portfolio
               image="../assets/images/project-pplk-itera-2022.png"
               title="Web. PPLK Itera 2022"
@@ -72,6 +72,13 @@ const Works = () => {
               desc="Website used as an information and voting system in PEMIRA KM Itera 2022. PEMIRA KM Itera is a general election event held to elect a student president at Institut Teknologi Sumatera."
               techStack="Develop project with TailwindCSS"
               role="Front-end"
+            />
+            <Portfolio
+              image="../assets/images/project-prodi-hmif.png"
+              title="Web. Informatics Study Program at ITERA"
+              desc="The information system website about informatics engineering study program at the Sumatera Institute of Technology."
+              techStack="Develop project with Laravel 10 and TailwindCSS"
+              role="Back-end"
             />
           </div>
         </div>
