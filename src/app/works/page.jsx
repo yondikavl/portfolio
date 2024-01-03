@@ -30,7 +30,7 @@ const Works = () => {
                   "text-sm bg-white/[.09] mr-4 p-2 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2] "
                 }
               >
-                Front-end
+                Frontend
               </Link>
               <Link
                 href="/"
@@ -38,7 +38,7 @@ const Works = () => {
                   "text-sm bg-white/[.09] mr-4 p-2 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2] "
                 }
               >
-                Back-end
+                Backend
               </Link>
               <Link
                 href="/"
