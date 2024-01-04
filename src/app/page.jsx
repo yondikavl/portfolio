@@ -19,7 +19,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-row justify-around mt-12 lg:my-24 flex-wrap text-center">
             <SkillsCard
-              text="BootstrapCSS"
+              text="Bootstrap"
               image="../assets/images/bootstrap-logo.svg"
             />
             <SkillsCard
