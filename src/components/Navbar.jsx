@@ -9,7 +9,7 @@ import { useState } from "react";
 const Navbar = ({ menu1, menu2 }) => {
   const GithubLink = "https://github.com/yondikavl";
   const LinkedLink = "https://www.linkedin.com/in/yondika-vio-landa/";
-  const InstagramLink = "https://instagram.com/yondikavl_";
+  const InstagramLink = "https://instagram.com/yondikavl";
 
   const [isMenu1Active, setMenu1Active] = useState(false);
   const [isMenu2Active, setMenu2Active] = useState(false);
