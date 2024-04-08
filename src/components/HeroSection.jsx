@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Typed from "typed.js";
+import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 
 const HeroSection = () => {
   const el = React.useRef(null);
@@ -19,6 +20,13 @@ const HeroSection = () => {
       typed.destroy();
     };
   }, []);
+
+  const setOnClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1CmqyaE9s09xaHB3PWv3nr-2kBAflzSOZ/view?usp=sharing",
+      "_blank"
+    );
+  };
 
   return (
     <section className="Hero bg-gradient-to-br from-zinc-900 to-zinc-800">
@@ -45,8 +53,14 @@ const HeroSection = () => {
           >
             Based in Indonesia
           </h1>
-          <button className="bg-white/[.09] mt-8 p-2 mr-4 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2]">
-            Download Resume
+          <button
+            onClick={setOnClick}
+            className="bg-white/[.09] mt-8 p-2 mr-4 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2]"
+          >
+            <span className="flex items-center">
+              <InsertDriveFileIcon />
+              <span className="ps-2">Download Resume</span>
+            </span>
           </button>
         </div>
         <div className="w-screen px-6 md:px-40 text-left absolute bottom-0 md:bottom-8 flex justify-between items-center flex-wrap">
