@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Web Developer", "UIUX Designer"],
+      strings: ["Web Developer", "Mobile Developer", "UIUX Designer"],
       typeSpeed: 150,
       backSpeed: 150,
       smartBackspace: true,
@@ -16,7 +16,6 @@ const HeroSection = () => {
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
@@ -46,6 +45,9 @@ const HeroSection = () => {
           >
             Based in Indonesia
           </h1>
+          <button className="bg-white/[.09] mt-8 p-2 mr-4 rounded-lg border-[1px] border-white/[.3] hover:bg-white/[0.2]">
+            Download Resume
+          </button>
         </div>
         <div className="w-screen px-6 md:px-40 text-left absolute bottom-0 md:bottom-8 flex justify-between items-center flex-wrap">
           <div className="my-4 md:my-0 w-32 md:w-fit">
