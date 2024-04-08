@@ -76,9 +76,7 @@ const HeroSection = () => {
             <h3 className="text-xs md:text-sm md:mb-2 text-gray-400">
               SERVICES
             </h3>
-            <p className="text-xs md:text-base">
-              Web Development and UIUX Design
-            </p>
+            <p className="text-xs md:text-base">Web and Mobile Development</p>
           </div>
           <div className="my-4 md:my-0 w-32 md:w-fit">
             <h3 className="text-xs md:text-sm md:mb-2 text-gray-400">
