@@ -35,6 +35,10 @@ export default function Home() {
               image="../assets/images/react-logo.svg"
             />
             <SkillsCard text="Next.js" image="../assets/images/next-logo.svg" />
+            <SkillsCard
+              text="Kotlin"
+              image="../assets/images/kotlin-logo.svg"
+            />
             <SkillsCard text="Figma" image="../assets/images/figma-logo.svg" />
           </div>
         </div>

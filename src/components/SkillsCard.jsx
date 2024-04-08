@@ -9,12 +9,12 @@ const SkillsCard = ({ image, text }) => {
         data-aos-duration="1500"
         src={image}
         alt="Skill"
-        className="w-24 p-4 rounded-xl"
+        className="w-12 md:w-24 p-4 rounded-xl"
       />
       <p
         data-aos="zoom-in"
         data-aos-duration="1500"
-        className="mt-4 text-sm text-white"
+        className="mt-4 text-xs md:text-sm text-white"
       >
         {text}
       </p>
