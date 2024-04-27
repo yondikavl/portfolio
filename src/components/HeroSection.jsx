@@ -23,7 +23,7 @@ const HeroSection = () => {
 
   const setOnClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1CmqyaE9s09xaHB3PWv3nr-2kBAflzSOZ/view?usp=sharing",
+      "https://drive.google.com/file/d/1UemeDGuX9XThRV--CzUG8fcWrYqHn88D/view?usp=sharing",
       "_blank"
     );
   };
