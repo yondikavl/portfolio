@@ -83,7 +83,7 @@ export default function Home() {
         data-aos="zoom-in"
         data-aos-duration="1500"
       >
-        <div className="flex justify-between text-whitey">
+        <div className="flex flex-col justify-between text-whitey md:flex-row">
           <p>
             Finalist in the User Experience Design division GEMASTIK XVI 2023
           </p>

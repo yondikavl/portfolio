@@ -23,7 +23,7 @@ const page = () => {
         className="absolute right-0 top-0"
         style={{ zIndex: -1 }}
       />
-      <div className="flex flex-wrap items-center justify-center gap-4 py-40 sm:mx-32 md:mx-96">
+      <div className="mx-8 flex flex-wrap items-center justify-center gap-4 py-40 sm:mx-32 md:mx-96">
         <CardWork
           image="github-user-app-mobile.png"
           project="Github User App"

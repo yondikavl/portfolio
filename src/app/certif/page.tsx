@@ -20,7 +20,7 @@ const page = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="w-2/3 text-center md:text-left">
+        <div className="text-center md:w-2/3 md:text-left">
           <h1
             className="text-5xl font-bold text-goldy"
             data-aos="zoom-in"

@@ -17,7 +17,7 @@ export const Skills = ({
     >
       <div className="flex gap-4 py-4">
         {icon}
-        <p className="text-2xl font-bold text-goldy">{text}</p>
+        <p className="font-bold text-goldy md:text-2xl">{text}</p>
       </div>
       <div className="flex w-4/5 flex-wrap justify-center gap-4">
         {tools.map((tool, index) => (
