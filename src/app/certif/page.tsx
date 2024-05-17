@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <div className="mx-8 py-40 md:mx-96">
+    <div className="mx-6 py-40 md:mx-96">
       <div className="flex w-full flex-col items-center justify-center gap-8 text-whitey md:flex-row">
         <div className="h-60 w-60 overflow-hidden rounded-full">
           <img

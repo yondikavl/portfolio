@@ -39,7 +39,7 @@ export const Hero = () => {
           </button>
         </div>
         <div className="mt-8">
-          <p className="text-justify">
+          <p className="text-justify text-sm md:text-base">
             An{" "}
             <span className="font-bold">
               undergraduate Informatics Engineering

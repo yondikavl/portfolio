@@ -7,7 +7,7 @@ import { FaGlobe, FaShapes } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="mx-8 flex flex-col items-center justify-between sm:mx-32 md:mx-96">
+    <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-32 md:mx-96 md:pt-0">
       <Hero />
       <div className="flex justify-center">
         <p
@@ -84,12 +84,12 @@ export default function Home() {
         data-aos-duration="1500"
       >
         <div className="flex flex-col justify-between text-whitey md:flex-row">
-          <p>
+          <p className="text-sm md:text-base">
             Finalist in the User Experience Design division GEMASTIK XVI 2023
           </p>
-          <p>September 2023</p>
+          <p className="text-sm md:text-base">September 2023</p>
         </div>
-        <p className="text-[#7c7c7c]">
+        <p className="text-sm text-[#7c7c7c] md:text-base">
           Pusat Prestasi Nasional, Kementerian Pendidikan, Kebudayaan, Riset,
           dan Teknologi
         </p>
