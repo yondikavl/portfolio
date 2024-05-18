@@ -12,7 +12,7 @@ export const Hero = () => {
 
   return (
     <>
-      <main className="mt-12 flex min-h-screen flex-col items-stretch justify-center text-whitey">
+      <main className="mt-12 flex min-h-screen flex-col items-stretch justify-center text-whitey md:mt-24">
         <img
           src="bg-ellips-1.svg"
           alt=""
