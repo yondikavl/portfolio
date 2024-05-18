@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./Button";
+import Link from "next/link";
 
 export const CardWork = ({
   image,
@@ -16,7 +17,8 @@ export const CardWork = ({
 }) => {
   return (
     <>
-      <div
+      <Link
+        href={href}
         className="flex w-96 flex-col justify-center gap-4 rounded-xl bg-[#232323] p-4"
         data-aos="zoom-in"
         data-aos-duration="1500"
@@ -35,7 +37,7 @@ export const CardWork = ({
           ))}
         </div>
         <Button href={href} name="Lihat Project" />
-      </div>
+      </Link>
     </>
   );
 };
