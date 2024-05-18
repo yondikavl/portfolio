@@ -78,7 +78,11 @@ export const Navbar = () => {
           </button>
           <div className="flex w-full flex-col items-center justify-center gap-8 px-8">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-bold text-[#AF9D55]">
+              <Link
+                href="/"
+                className="text-2xl font-bold text-[#AF9D55]"
+                onClick={toggleMenu}
+              >
                 Yondika
               </Link>
             </div>

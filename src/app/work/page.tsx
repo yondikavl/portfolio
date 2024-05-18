@@ -46,7 +46,7 @@ const page = () => {
           href={"https://github.com/masqomar21/pemira-KM-ITERA-2022"}
         />
         <CardWork
-          image="github-user-app-mobile.png"
+          image="website-desa-way-kalam.png"
           project="Website Desa Way Kalam"
           category="Web Development"
           tools={["html.svg", "css.svg", "tailwind.svg", "js.svg"]}
