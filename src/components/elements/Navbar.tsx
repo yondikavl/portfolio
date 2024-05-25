@@ -118,7 +118,7 @@ export const Navbar = () => {
                 <FaGithub />
               </Link>
               <Link
-                href="https://www.linkedin.com/in/yondika-vio-landa"
+                href="https://www.linkedin.com/in/yondikavl"
                 target="_blank"
                 className="hover:text-white text-2xl text-[#AF9D55]"
                 onClick={toggleMenu}
