@@ -11,7 +11,7 @@ export const Skills = ({
 }) => {
   return (
     <div
-      className="flex min-h-80 w-full cursor-pointer flex-col items-center justify-start gap-4 rounded-xl border-2 border-[#5C5C5C] py-8 hover:bg-[#363636]"
+      className="flex min-h-80 w-full cursor-pointer flex-col items-center justify-start gap-4 rounded-xl border-2 border-[#5C5C5C] p-8 hover:bg-[#363636]"
       data-aos="zoom-in"
       data-aos-duration="1500"
     >

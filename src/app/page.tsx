@@ -7,7 +7,7 @@ import { FaGlobe, FaShapes } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-32 md:mx-96 md:pt-0">
+    <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-32 md:pt-0 lg:mx-96">
       <Hero />
       <div className="flex justify-center">
         <p
@@ -29,7 +29,7 @@ export default function Home() {
       <h2 className="py-8 pt-24 text-center text-4xl font-bold text-goldy">
         Skills
       </h2>
-      <div className="flex w-full flex-col gap-4 md:flex-row md:py-12">
+      <div className="flex w-full flex-col justify-center gap-4 md:flex-row md:py-12">
         <Skills
           icon={<FaGlobe className="text-3xl text-whitey" />}
           text="Web Development"

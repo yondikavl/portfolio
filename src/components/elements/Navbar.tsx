@@ -18,7 +18,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="fixed z-10 flex w-full items-center justify-between p-6 text-[#BCBCBC] backdrop-blur-md md:px-72">
+      <div className="fixed z-10 flex w-full items-center justify-between p-6 text-[#BCBCBC] backdrop-blur-md lg:px-72">
         <div className="flex items-center">
           <Link href="/" className="text-2xl font-bold text-[#AF9D55]">
             Yondika
