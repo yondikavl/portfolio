@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   const onClickPdf = () => {
-    window.open("https://github.com/yondikavl/", "_blank");
+    window.open("https://drive.google.com/file/d/12hIUHP8CPnygqFy8fRa-QUaKj4-NxU1R/view?usp=sharing", "_blank");
   };
 
   return (
