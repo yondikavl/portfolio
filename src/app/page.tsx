@@ -36,7 +36,7 @@ export default function Home() {
           tools={[
             "html.svg",
             "css.svg",
-            "js.svg",
+            "javascript.svg",
             "typescript.svg",
             "next.svg",
             "react.svg",
@@ -47,7 +47,7 @@ export default function Home() {
         <Skills
           icon={<FaMobileAlt className="text-3xl text-whitey" />}
           text="Mobile Development"
-          tools={["kotlin.svg", "androidstudio.svg", "react.svg"]}
+          tools={["kotlin.svg", "android studio.svg", "flutter.svg"]}
         />
         <Skills
           icon={<FaShapes className="text-3xl text-whitey" />}

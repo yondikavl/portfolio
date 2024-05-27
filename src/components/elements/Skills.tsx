@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGlobe } from "react-icons/fa";
 
 export const Skills = ({
   icon,
@@ -9,6 +10,11 @@ export const Skills = ({
   text: any;
   tools: string[];
 }) => {
+  const generateLabel = (path: string) => {
+    const fileName = path.split("/").pop()?.split(".")[0];
+    return fileName ? fileName.toUpperCase() : "Unknown Tool";
+  };
+
   return (
     <div
       className="flex min-h-80 w-full cursor-pointer flex-col items-center justify-start gap-4 rounded-xl border-2 border-[#5C5C5C] p-8 hover:bg-[#363636]"
@@ -21,7 +27,10 @@ export const Skills = ({
       </div>
       <div className="flex w-4/5 flex-wrap justify-center gap-4">
         {tools.map((tool, index) => (
-          <img key={index} src={tool} alt={`Tool ${index}`} />
+          <div key={index} className="flex flex-col items-center">
+            <img src={tool} alt={`Tool ${index}`} className="h-12 w-12" />
+            <p className="lowercase text-whitey">{generateLabel(tool)}</p>
+          </div>
         ))}
       </div>
     </div>
