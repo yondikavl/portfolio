@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FaMobileAlt } from "react-icons/fa";
-import { FaFile, FaGlobe, FaShapes } from "react-icons/fa6";
+import { FaFile, FaGlobe, FaShapes, FaGithub } from "react-icons/fa6";
 import { Card } from "./Card";
 
 export const Hero = () => {
@@ -11,7 +11,7 @@ export const Hero = () => {
   };
 
   const onClickPdf = () => {
-    window.open("https://drive.google.com/file/d/12hIUHP8CPnygqFy8fRa-QUaKj4-NxU1R/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1bCGP69dNEZATAZLqLYIE1jFnJjSNhR1V/view?usp=sharing", "_blank");
   };
 
   return (
@@ -38,7 +38,7 @@ export const Hero = () => {
             onClick={onClick}
             className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
           >
-            <FaFile className="md:text-xl" />
+            <FaGithub className="md:text-xl" />
             View Github
           </button>
           <button
