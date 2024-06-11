@@ -11,7 +11,10 @@ export const Hero = () => {
   };
 
   const onClickPdf = () => {
-    window.open("https://drive.google.com/file/d/1bCGP69dNEZATAZLqLYIE1jFnJjSNhR1V/view?usp=sharing", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/15C-qK55wYyewtwggDuL-7ngaRxWlshyW/view?usp=sharing",
+      "_blank",
+    );
   };
 
   return (
@@ -33,7 +36,7 @@ export const Hero = () => {
             Yondika Vio Landa
           </h1>
         </div>
-        <div className="mt-8 gap-4 flex justify-center">
+        <div className="mt-8 flex justify-center gap-4">
           <button
             onClick={onClick}
             className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
@@ -46,7 +49,7 @@ export const Hero = () => {
             className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
           >
             <FaFile className="md:text-xl" />
-            Portfolio PDF 
+            Portfolio PDF
           </button>
         </div>
         <div className="mt-8">
