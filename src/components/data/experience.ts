@@ -7,21 +7,16 @@ export const experiences = [
         time: "Aug 2021 - Present",
         institution: "Institut Teknologi Sumatera",
       },
-      {
-        position: "Mobile App Development with React",
-        time: "May 2024 - Jul 2024",
-        institution: "Fresh Graduate Academy Digital Talent Scholarship 2024",
-      },
     ],
   },
   {
     category: "Work/Intern/Volunteer",
     items: [
-      // {
-      //   position: "Frontend Web Developer",
-      //   time: "May 2024 - Jul 2024",
-      //   institution: "Pusat Riset Teknologi Cerdas ITERA",
-      // },
+      {
+        position: "Frontend Web Developer",
+        time: "May 2024 - Jul 2024",
+        institution: "Pusat Riset Teknologi Cerdas ITERA",
+      },
       {
         position: "Mobile Developer",
         time: "Feb 2024 - Jul 2024",

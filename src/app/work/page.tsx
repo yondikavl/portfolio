@@ -25,6 +25,27 @@ const page = () => {
       />
       <div className="mx-6 flex flex-wrap items-center justify-center gap-4 py-40 sm:mx-32 md:mx-96">
         <CardWork
+          image="Tanamify.png"
+          project="Tanamify App"
+          category="Mobile Development"
+          tools={["kotlin.svg", "tensorflow.svg"]}
+          href={"https://github.com/yondikavl/Tanamify-Mobile-App"}
+        />
+        <CardWork
+          image="Mantory_Preview.png"
+          project="Mantory App"
+          category="Mobile Development"
+          tools={["flutter.svg"]}
+          href={"https://github.com/yondikavl/Mantory-Mobile-App"}
+        />
+        <CardWork
+          image="narasiqu.png"
+          project="Narasiqu App"
+          category="Mobile Development"
+          tools={["kotlin.svg"]}
+          href={"https://github.com/yondikavl/Narasiqu-Mobile-App"}
+        />
+        <CardWork
           image="github-user-app-mobile.png"
           project="Github User App"
           category="Mobile Development"
@@ -42,36 +63,29 @@ const page = () => {
           image="web-pemira.png"
           project="Website Pemira KM ITERA 2022"
           category="Web Development"
-          tools={["html.svg", "css.svg", "tailwind.svg", "js.svg"]}
+          tools={["html.svg", "css.svg", "tailwind.svg", "javascript.svg"]}
           href={"https://github.com/masqomar21/pemira-KM-ITERA-2022"}
         />
         <CardWork
           image="website-desa-way-kalam.png"
           project="Website Desa Way Kalam"
           category="Web Development"
-          tools={["html.svg", "css.svg", "tailwind.svg", "js.svg"]}
+          tools={["html.svg", "css.svg", "tailwind.svg", "javascript.svg"]}
           href={"https://github.com/yondikavl/Website-Desa-WayKalam"}
         />
         <CardWork
           image="web-desa-sidorejo.png"
           project="Website Desa Sidorejo"
           category="Web Development"
-          tools={["next.svg", "tailwind.svg", "js.svg"]}
+          tools={["next.svg", "tailwind.svg", "javascript.svg"]}
           href={"https://github.com/yondikavl/ksi02-sidorejo"}
         />
         <CardWork
           image="github-user-app-mobile.png"
           project="ToDo Web App"
           category="Web Development"
-          tools={["html.svg", "css.svg", "js.svg"]}
+          tools={["html.svg", "css.svg", "javascript.svg"]}
           href={"https://github.com/yondikavl/react-todo-app"}
-        />
-        <CardWork
-          image="narasiqu.png"
-          project="Narasiqu App"
-          category="Mobile Development"
-          tools={["kotlin.svg"]}
-          href={"https://github.com/yondikavl/Narasiqu-Mobile-App-Awal"}
         />
         <CardWork
           image="personal-portfolio.png"

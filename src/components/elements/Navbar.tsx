@@ -52,7 +52,7 @@ export const Navbar = () => {
             <FaGithub />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/yondika-vio-landa"
+            href="https://www.linkedin.com/in/yondikavl"
             target="_blank"
             className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
