@@ -7,7 +7,7 @@ import { FaGlobe, FaShapes } from "react-icons/fa6";
 
 export default function Home() {
   return (
-    <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-32 md:pt-0 lg:mx-96">
+    <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-20 md:pt-0 lg:mx-80">
       <Hero />
       <div className="flex justify-center">
         <p
