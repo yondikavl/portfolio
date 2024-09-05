@@ -47,7 +47,7 @@ export default function Home() {
         <Skills
           icon={<FaMobileAlt className="text-3xl text-whitey" />}
           text="Mobile Development"
-          tools={["kotlin.svg", "android studio.svg", "flutter.svg"]}
+          tools={["kotlin.svg", "flutter.svg"]}
         />
         <Skills
           icon={<FaShapes className="text-3xl text-whitey" />}
