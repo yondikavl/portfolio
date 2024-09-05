@@ -9,28 +9,25 @@ export const Footer = () => {
         <div className="flex gap-4">
           <p className=" text-whitey">2024 Yondika. All Right Reserved.</p>
         </div>
-        <div>
-          <p className="text-[#AF9D55]">yondikaviolanda@gmail.com</p>
-        </div>
         <div className="flex gap-4">
           <Link
             href="https://www.instagram.com/yondikavl/"
             target="_blank"
-            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             <FaInstagram />
           </Link>
           <Link
             href="https://www.github.com/yondikavl/"
             target="_blank"
-            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             <FaGithub />
           </Link>
           <Link
             href="https://www.linkedin.com/in/yondikavl"
             target="_blank"
-            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             <FaLinkedin />
           </Link>

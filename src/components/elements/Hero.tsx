@@ -39,14 +39,14 @@ export const Hero = () => {
         <div className="mt-8 flex justify-center gap-4">
           <button
             onClick={onClick}
-            className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
+            className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
           >
             <FaGithub className="md:text-xl" />
             View Github
           </button>
           <button
             onClick={onClickPdf}
-            className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
+            className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
           >
             <FaFile className="md:text-xl" />
             Portfolio PDF

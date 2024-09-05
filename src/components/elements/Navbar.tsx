@@ -27,34 +27,34 @@ export const Navbar = () => {
         <div className="hidden gap-4 md:flex">
           <Link
             href="/work"
-            className="flex min-h-12 min-w-20 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-20 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f]"
           >
             Work
           </Link>
           <Link
             href="/certif"
-            className="flex min-h-12 min-w-20 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-20 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f]"
           >
             Certificate
           </Link>
           <Link
             href="https://www.instagram.com/yondikavl/"
             target="_blank"
-            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             <FaInstagram />
           </Link>
           <Link
             href="https://www.github.com/yondikavl/"
             target="_blank"
-            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             <FaGithub />
           </Link>
           <Link
             href="https://www.linkedin.com/in/yondikavl"
             target="_blank"
-            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="flex min-h-12 min-w-12 items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             <FaLinkedin />
           </Link>
@@ -62,7 +62,7 @@ export const Navbar = () => {
         <div className="flex items-center md:hidden">
           <button
             onClick={toggleMenu}
-            className="rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] p-2 text-2xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
+            className="rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] p-2 text-2xl hover:bg-[#af9d55] hover:text-[#0f0f0f]"
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
@@ -95,7 +95,7 @@ export const Navbar = () => {
             </Link>
             <Link
               href="/certif"
-              className="flex min-h-12 w-full items-center justify-center rounded-lg border border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 text-whitey hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f]"
+              className="flex min-h-12 w-full items-center justify-center rounded-lg border-2 border-[#5C5C5C] bg-[#0f0f0f] px-4 py-2 text-whitey hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f]"
               onClick={toggleMenu}
             >
               Certificate

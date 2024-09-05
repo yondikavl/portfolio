@@ -21,6 +21,7 @@ const config = {
     colors: {
       goldy: "#af9d55",
       whitey: "#BCBCBC",
+      dark: "#212121",
     },
     extend: {
       colors: {

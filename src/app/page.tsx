@@ -70,6 +70,7 @@ export default function Home() {
               position={item.position}
               time={item.time}
               institution={item.institution}
+              description={item.description}
             />
           ))}
         </div>
