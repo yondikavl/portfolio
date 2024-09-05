@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    category: "Educational",
+    category: "Educational/Study",
     items: [
       {
         position: "S1 Teknik Informatika",
@@ -18,7 +18,7 @@ export const experiences = [
     ],
   },
   {
-    category: "Work/Intern/Volunteer",
+    category: "Work/Intern",
     items: [
       {
         position: "Mobile Developer",
@@ -41,7 +41,7 @@ export const experiences = [
     ],
   },
   {
-    category: "Organizational",
+    category: "Organizational/Volunteer",
     items: [
       {
         position: "Staff of Technopreneur division",
