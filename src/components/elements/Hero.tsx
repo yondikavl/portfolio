@@ -53,21 +53,20 @@ export const Hero = () => {
           </button>
         </div>
         <div className="mt-8">
-          <p className="text-justify text-sm md:text-base">
+          <p className="text-justify text-sm md:text-lg">
             An{" "}
             <span className="font-bold">
               undergraduate Informatics Engineering
             </span>{" "}
             program at the Sumatera Institute of Technology, passionate about
             pursuing a career in development. Skilled in{" "}
-            <span className="font-bold">mobile development</span>
+            <span className="font-bold">mobile development </span>
             tools such as <span className="font-bold">Kotlin</span> and{" "}
-            <span className="font-bold">React Native</span>, as well as
-            <span className="font-bold">web development</span> using{" "}
-            <span className="font-bold">HTML, CSS and JavaScript</span>. A
-            detail-oriented individual with a successful track record of
-            managing several projects fueled by a strong interest in mobile and
-            web development.
+            <span className="font-bold">Flutter</span>, as well as
+            <span className="font-bold"> web development</span> using{" "}
+            <span className="font-bold"> React.js</span>. A detail-oriented
+            individual with a successful track record of managing several
+            projects fueled by a strong interest in mobile and web development.
           </p>
         </div>
         <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
