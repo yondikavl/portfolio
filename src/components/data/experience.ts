@@ -35,7 +35,7 @@ export const experiences = [
       {
         position: "Mobile Engineer",
         time: "Apr - Jul 2024",
-        institution: "Intelligent Technology Research Center ITERA",
+        institution: "Tanamify ID",
         description: "Coba",
       },
     ],
