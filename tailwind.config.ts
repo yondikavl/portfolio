@@ -19,6 +19,7 @@ const config = {
       },
     },
     colors: {
+      white: "#ffffff",
       goldy: "#af9d55",
       whitey: "#BCBCBC",
       dark: "#212121",

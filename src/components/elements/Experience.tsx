@@ -21,7 +21,7 @@ export const Experience = ({
 
   return (
     <div
-      className="hover:bg-dark mb-2 rounded-xl border-2 border-[#5C5C5C] p-5"
+      className="mb-2 rounded-xl border border-[#3a3a3a] p-5 hover:bg-dark"
       data-aos="zoom-in"
       data-aos-duration="1500"
     >

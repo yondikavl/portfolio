@@ -56,7 +56,7 @@ export default function Home() {
         />
       </div>
 
-      <h2 className="pt-24 text-center text-4xl font-bold text-goldy">
+      <h2 className="pb-8 pt-24 text-center text-4xl font-bold text-goldy">
         Experience
       </h2>
       {experiences.map((experience, index) => (
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
       ))}
 
-      <h2 className="pt-24 text-center text-4xl font-bold text-goldy">
+      <h2 className="pb-8 pt-24 text-center text-4xl font-bold text-goldy">
         Achievement
       </h2>
       <div
