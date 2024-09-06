@@ -36,7 +36,14 @@ export const Experience = ({
       {/* Accordion Content */}
       {isOpen && (
         <div className="mt-2">
-          <p className="text-sm text-[#a0a0a0] md:text-base">{description}</p>
+          <p className="text-sm text-[#a0a0a0] md:text-base">
+            {description.split("\n").map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
         </div>
       )}
     </div>

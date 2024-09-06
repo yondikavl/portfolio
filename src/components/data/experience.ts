@@ -6,14 +6,16 @@ export const experiences = [
         position: "S1 Teknik Informatika",
         time: "Aug 2021 - Present",
         institution: "Institut Teknologi Sumatera",
-        description: "Coba",
+        description:
+          "GPA : 3.54/4.00 \nRelevant Coursework : Object-Oriented Programming, Web Programming, Basic Software Development, Human-Computer Interaction, Algorithms and Data Structures, Database, Algorithms and Programming. ",
       },
       {
         position: "Mobile Development Cohort",
         time: "Feb - Jul 2024",
         institution:
           "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
-        description: "Coba",
+        description:
+          "• Developed an Android application to display GitHub user data by integrating the GitHub API, consisting of 5 pages.\n• Created an Android application for detecting cancer based on images using machine learning, comprising 3 pages.\n• Designed and Developed an Android application to help user to share stories. It implements a Single Source of Truth using Room, ensuring data consistency and reliability, along with offline functionality. The app also includes user authentication using email and password and data consumption from APIs.",
       },
     ],
   },
@@ -30,13 +32,22 @@ export const experiences = [
         position: "Software Engineer",
         time: "Mar - Aug 2024",
         institution: "Intelligent Technology Research Center ITERA",
-        description: "Coba",
+        description:
+          "• Designed the UI and developed the interface for the SDGs website for the Bandar Lampung city government, enabling data analysis and dashboard viewing for 17 goals and 400 indicators. \n• Collaborated on implementation with Laravel, Bootstrap, and MySQL, ensuring seamless integration and a 25% improvement in performance. \n• Developed 3 dashboard features for predictions, comparative analysis, and geospatial data distribution to monitor performance based on input data. \n• Presented and demonstrated the website to over 15 regional government organizations in Bandar Lampung, receiving positive feedback and securing commitment for 2 future updates and enhancements.",
       },
       {
         position: "Mobile Engineer",
         time: "Apr - Jul 2024",
         institution: "Tanamify ID",
-        description: "Coba",
+        description:
+          "• Designed over 10 user interfaces and experiences for the Tanamify app using Figma.\n• Developed the mobile application with Kotlin and XML using MVVM architecture, improving performance by 30% and ensuring usability.\n• Integrated 2 machine learning models, including image classification and artificial neural network (ANN), into the Android app using TFLite.\n• Integrated 4 APIs from the backend server for authentication and history tracking.",
+      },
+      {
+        position: "IT Support Technician",
+        time: "Aug 2019 - Mar 2020",
+        institution: "SMK Swadhipa 2 Natar",
+        description:
+          "• Installed, configured, and updated over 20 software applications.\n• Created 30+ graphic designs using Corel Draw and Adobe Photoshop for internal and external use. \n• Installed and configured over 10 CCTV systems, ensured functionality, and provided user training. \n• Executed 5+ network installations and configurations, including cabling, routers, and switches, and resolved network issues",
       },
     ],
   },
@@ -47,25 +58,29 @@ export const experiences = [
         position: "Staff of Technopreneur division",
         time: "Apr 2023- Des 2023",
         institution: "Himpunan Mahasiswa Informatika ITERA",
-        description: "Coba",
+        description:
+          "• Spearheaded the backend development of the Informatics study program website, creating and managing over 20 pages to streamline information dissemination. \n• Implemented frontend development for a voting website, ensuring usability and responsiveness across more than 4 pages. \n• Led a team of 9 developers for the HMIF ITERA website development, successfully completing all tasks on time and within scope.",
       },
       {
         position: "Staff of Information Technology",
         time: "Mar 2023 - Des 2023",
         institution: "Cabinet of KM ITERA 2023/2024",
-        description: "Coba",
+        description:
+          "• Crafted the user interface layout for the KM ITERA website, designing over 15 pages to enhance user engagement. \n• Enhanced the Content Management System (CMS) pages for the KM ITERA website, improving functionality and usability across 4 key pages. \n• Collaborated with 11 members from the Ministry of Information Technology, resulting in the successful implementation of new website features.",
       },
       {
-        position: "Frontend Web Developer",
+        position: "Frontend Developer",
         time: "Nov 2022 - Feb 2023",
         institution: "PEMIRA KM ITERA 2022",
-        description: "Coba",
+        description:
+          "• Crafted a website for the student presidential election voting at the PEMIRA KM ITERA 2022 event at Institut Teknologi Sumatera, ensuring secure and efficient voting. \n• Integrated Tailwind CSS with CodeIgniter 3 for a seamless user experience during the voting process, successfully serving over 5,200 eligible student voters. \n• Completed the project within 2 months in collaboration with the frontend team, meeting all project milestones ahead of schedule.",
       },
       {
-        position: "Frontend Web Developer",
+        position: "Frontend Developer",
         time: "Jun - Aug 2022",
         institution: "PPLK ITERA 2022",
-        description: "Coba",
+        description:
+          "• Collaborated with a 7-member frontend team to develop a campus environment introduction website for new students, creating over 10 interactive and informative pages. \n• Developed a attendance system with HTML, JavaScript and Bootstrap CSS used by over 4800 new students, enhancing event management efficiency by 30%. \n• Implemented responsive design principles to ensure optimal user experience across various devices. ",
       },
       {
         position: "Team Member",
