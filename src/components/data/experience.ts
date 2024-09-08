@@ -23,13 +23,13 @@ export const experiences = [
     category: "Work/Intern",
     items: [
       {
-        position: "Frontend Developer (Flutter)",
+        position: "Flutter Developer",
         time: "Sep - Dec 2024",
         institution: "PT. Inti Utama Solusindo (Pharos Group)",
         description: "MSIB Kampus Merdeka Batch 7.",
       },
       {
-        position: "Frontend Engineer",
+        position: "Software Engineer",
         time: "Mar - Aug 2024",
         institution: "Intelligent Technology Research Center ITERA",
         description:

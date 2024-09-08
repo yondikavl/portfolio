@@ -52,7 +52,7 @@ export const Hero = () => {
           </div>
           <div>
             <div className="text-center">
-              <h1 className="mb-4 text-2xl text-[#af9d55] md:text-7xl">
+              <h1 className="mb-4 text-xl text-[#af9d55] md:text-5xl">
                 Hi, Iam
               </h1>
               <h1
@@ -61,6 +61,9 @@ export const Hero = () => {
                 data-aos-duration="1500"
               >
                 Yondika
+              </h1>
+              <h1 className="mb-4 text-xl text-[#af9d55] md:text-5xl">
+                Vio Landa
               </h1>
             </div>
             <div className="mt-8 flex justify-center gap-4">
