@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-20 md:pt-0 lg:mx-80">
       <Hero />
-      <div className="flex justify-center">
+      <div className="mt-4 flex justify-center md:mt-0">
         <p
           className="italic text-whitey md:text-xl"
           data-aos="zoom-in"
