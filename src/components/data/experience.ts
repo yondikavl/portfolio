@@ -23,21 +23,21 @@ export const experiences = [
     category: "Work/Intern",
     items: [
       {
-        position: "Flutter Developer",
+        position: "Frontend Developer",
         time: "Sep - Dec 2024",
-        institution: "PT. Inti Utama Solusindo (Pharos Group)",
+        institution: "PT. Inti Utama Solusindo (Pharos & Century Group)",
         description:
           "MSIB Kampus Merdeka Batch 7. \n• Developed a widget for scanning barcodes used in inventory management with Flutter in HealthyOne App, improving product search efficiency by over 70%. This widget is integrated with a barcode reader device for scanning and reading barcode lines efficiently.\n• Improved the widget's UI in the HealthyOne App by reducing text size, margins, adding an info button to the dropdown, and adjusting the layout to display 4 items per row, optimizing content positioning for better usability.\n• Implemented a scroll system in the dropdown for load more functionality, prioritizing records already fetched from the frontend. The system identifies if all records and quantities have been pulled, avoiding unnecessary backend queries. If not, it queries the backend when scrolling reaches the end, ensuring no duplicate IDs or quantities are fetched and that the record count matches expectations.",
       },
       {
-        position: "Software Engineer",
+        position: "Frontend Engineer",
         time: "Mar - Aug 2024",
-        institution: "Intelligent Technology Research Center ITERA",
+        institution: "Bandar Lampung City Government",
         description:
           "• Designed the UI and developed the interface for the SDGs website for the Bandar Lampung city government, enabling data analysis and dashboard viewing for 17 goals and 400 indicators. \n• Collaborated on implementation with Laravel, Bootstrap, and MySQL, ensuring seamless integration and a 25% improvement in performance. \n• Developed 3 dashboard features for predictions, comparative analysis, and geospatial data distribution to monitor performance based on input data. \n• Presented and demonstrated the website to over 15 regional government organizations in Bandar Lampung, receiving positive feedback and securing commitment for 2 future updates and enhancements.",
       },
       {
-        position: "Mobile Engineer",
+        position: "Mobile Developer",
         time: "Apr - Jul 2024",
         institution: "Tanamify ID",
         description:
