@@ -7,7 +7,7 @@ export const experiences = [
         time: "Aug 2021 - Present",
         institution: "Institut Teknologi Sumatera",
         description:
-          "GPA : 3.54/4.00 \nRelevant Coursework : Object-Oriented Programming, Web Programming, Basic Software Development, Human-Computer Interaction, Algorithms and Data Structures, Database, Algorithms and Programming. ",
+          "GPA : 3.61/4.00 \nRelevant Coursework : Object-Oriented Programming, Web Programming, Basic Software Development, Human-Computer Interaction, Algorithms and Data Structures, Database, Algorithms and Programming. ",
       },
       {
         position: "Mobile Development Cohort",
@@ -23,14 +23,14 @@ export const experiences = [
     category: "Work/Intern",
     items: [
       {
-        position: "Frontend Developer",
-        time: "Sep - Dec 2024",
+        position: "Software Engineer (Intern)",
+        time: "Aug - Dec 2024",
         institution: "PT. Inti Utama Solusindo (Pharos & Century Group)",
         description:
           "MSIB Kampus Merdeka Batch 7. \n• Developed a widget for scanning barcodes used in inventory management with Flutter in HealthyOne App, improving product search efficiency by over 70%. This widget is integrated with a barcode reader device for scanning and reading barcode lines efficiently.\n• Improved the widget's UI in the HealthyOne App by reducing text size, margins, adding an info button to the dropdown, and adjusting the layout to display 4 items per row, optimizing content positioning for better usability.\n• Implemented a scroll system in the dropdown for load more functionality, prioritizing records already fetched from the frontend. The system identifies if all records and quantities have been pulled, avoiding unnecessary backend queries. If not, it queries the backend when scrolling reaches the end, ensuring no duplicate IDs or quantities are fetched and that the record count matches expectations.",
       },
       {
-        position: "Frontend Engineer",
+        position: "Software Engineer (Intern)",
         time: "Mar - Aug 2024",
         institution: "Bandar Lampung City Government",
         description:
@@ -44,7 +44,7 @@ export const experiences = [
           "• Designed over 10 user interfaces and experiences for the Tanamify app using Figma.\n• Developed the mobile application with Kotlin and XML using MVVM architecture, improving performance by 30% and ensuring usability.\n• Integrated 2 machine learning models, including image classification and artificial neural network (ANN), into the Android app using TFLite.\n• Integrated 4 APIs from the backend server for authentication and history tracking.",
       },
       {
-        position: "IT Support Technician",
+        position: "IT Support Technician (Intern)",
         time: "Aug 2019 - Mar 2020",
         institution: "SMK Swadhipa 2 Natar",
         description:
