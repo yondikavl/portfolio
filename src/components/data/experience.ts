@@ -23,7 +23,7 @@ export const experiences = [
     category: "Work/Intern",
     items: [
       {
-        position: "Software Engineer (Intern)",
+        position: "Mobile Developer (Intern)",
         time: "Aug - Dec 2024",
         institution: "PT. Inti Utama Solusindo (Pharos & Century Group)",
         description:

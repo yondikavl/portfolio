@@ -26,9 +26,18 @@ export const Experience = ({
       data-aos-duration="1500"
     >
       <div className="cursor-pointer" onClick={toggleAccordion}>
-        <div className="flex flex-col justify-between text-whitey sm:flex-row">
-          <p className="text-sm md:text-base">{position}</p>
-          <p className="text-sm md:text-base">{time}</p>
+        <div className="flex flex-row items-center gap-4">
+          <div>
+            <img
+              src={institution ? `/public/${institution}.png` : "/public/default.jpeg"}
+              alt={institution || "Default"}
+              className="h-12 w-12 rounded-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col justify-between text-whitey sm:flex-row">
+            <p className="text-sm md:text-base">{position}</p>
+            <p className="text-sm md:text-base">{time}</p>
+          </div>
         </div>
         <p className="text-sm text-[#7c7c7c] md:text-base">{institution}</p>
       </div>
