@@ -29,7 +29,7 @@ export const Experience = ({
         <div className="flex flex-row items-center gap-4">
           <div>
             <img
-              src={institution ? `/public/${institution}.png` : "/public/default.jpeg"}
+              src={institution ? `/public/${institution}.png` : "/public/deafult.jpeg"}
               alt={institution || "Default"}
               className="h-12 w-12 rounded-full object-cover"
             />
@@ -38,8 +38,8 @@ export const Experience = ({
             <p className="text-sm md:text-base">{position}</p>
             <p className="text-sm md:text-base">{time}</p>
           </div>
+          <p className="text-sm text-[#7c7c7c] md:text-base">{institution}</p>
         </div>
-        <p className="text-sm text-[#7c7c7c] md:text-base">{institution}</p>
       </div>
 
       {/* Accordion Content */}
