@@ -22,7 +22,7 @@ export const Experience = ({
   // Function to determine the image source
   const getImageSrc = (institution: string | undefined) => {
     if (institution) {
-      return [`${institution}.png`, `${institution}.jpg`, `${institution}.jpeg`].find(
+      return ["${institution}.png", "${institution}.jpg", "${institution}.jpeg"].find(
         (src) => {
           const img = new Image();
           img.src = src;
@@ -30,7 +30,7 @@ export const Experience = ({
         }
       );
     }
-    return "default.jpeg";
+    return "deafult.jpeg";
   };
 
   const imageSrc = getImageSrc(institution);
