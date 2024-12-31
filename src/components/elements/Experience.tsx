@@ -19,6 +19,22 @@ export const Experience = ({
     setIsOpen(!isOpen);
   };
 
+  // Function to determine the image source
+  const getImageSrc = (institution: string | undefined) => {
+    if (institution) {
+      return [`${institution}.png`, `${institution}.jpg`, `${institution}.jpeg`].find(
+        (src) => {
+          const img = new Image();
+          img.src = src;
+          return img.complete;
+        }
+      );
+    }
+    return "default.jpeg";
+  };
+
+  const imageSrc = getImageSrc(institution);
+
   return (
     <div
       className="mb-2 rounded-xl border border-[#3a3a3a] p-5 hover:bg-dark"
@@ -27,17 +43,17 @@ export const Experience = ({
     >
       <div className="cursor-pointer" onClick={toggleAccordion}>
         <div className="flex flex-row items-center gap-4">
-          <div>
+          <div className="bg-white">
             <img
-              src={institution ? `/public/${institution}.png` : "/public/deafult.jpeg"}
+              src={imageSrc}
               alt={institution || "Default"}
               className="h-12 w-12 rounded-full object-cover"
             />
           </div>
-          <div className="flex flex-col justify-between text-whitey sm:flex-row">
+          <div className="flex flex-col justify-between text-whitey">
             <div className="flex flex-row justify-between">
-            <p className="text-sm md:text-base">{position}</p>
-            <p className="text-sm md:text-base">{time}</p>
+              <p className="text-sm md:text-base">{position}</p>
+              <p className="text-sm md:text-base">{time}</p>
             </div>
             <p className="text-sm text-[#7c7c7c] md:text-base">{institution}</p>
           </div>

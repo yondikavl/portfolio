@@ -25,7 +25,7 @@ export const experiences = [
       {
         position: "Mobile Developer (Intern)",
         time: "Aug - Dec 2024",
-        institution: "PT. Inti Utama Solusindo (Pharos & Century Group)",
+        institution: "PT. Pharos Indonesia",
         description:
           "MSIB Kampus Merdeka Batch 7. \n• Developed a widget for scanning barcodes used in inventory management with Flutter in HealthyOne App, improving product search efficiency by over 70%. This widget is integrated with a barcode reader device for scanning and reading barcode lines efficiently.\n• Improved the widget's UI in the HealthyOne App by reducing text size, margins, adding an info button to the dropdown, and adjusting the layout to display 4 items per row, optimizing content positioning for better usability.\n• Implemented a scroll system in the dropdown for load more functionality, prioritizing records already fetched from the frontend. The system identifies if all records and quantities have been pulled, avoiding unnecessary backend queries. If not, it queries the backend when scrolling reaches the end, ensuring no duplicate IDs or quantities are fetched and that the record count matches expectations.",
       },
