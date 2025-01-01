@@ -39,9 +39,9 @@ export const Experience = ({
             />
           </div>
           <div className="flex flex-col justify-between text-whitey w-full">
-            <div className="flex flex-row justify-between">
-              <p className="text-sm md:text-base">{position}</p>
-              <p className="text-sm md:text-base">{time}</p>
+            <div className="flex flex-col md:flex-row justify-between">
+              <p className="text-base md:text-base">{position}</p>
+              <p className="text-base md:text-base">{time}</p>
             </div>
             <p className="text-sm text-[#7c7c7c] md:text-base">{institution}</p>
           </div>
