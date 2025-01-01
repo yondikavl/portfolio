@@ -3,6 +3,7 @@ export const experiences = [
     category: "Educational/Study",
     items: [
       {
+        imageSrc: "logo_itera.png",
         position: "S1 Teknik Informatika",
         time: "Aug 2021 - Present",
         institution: "Institut Teknologi Sumatera",
@@ -10,6 +11,7 @@ export const experiences = [
           "GPA : 3.61/4.00 \nRelevant Coursework : Object-Oriented Programming, Web Programming, Basic Software Development, Human-Computer Interaction, Algorithms and Data Structures, Database, Algorithms and Programming. ",
       },
       {
+        imageSrc: "logo_bangkit.jpg",
         position: "Mobile Development Cohort",
         time: "Feb - Jul 2024",
         institution:
@@ -23,6 +25,7 @@ export const experiences = [
     category: "Work/Intern",
     items: [
       {
+        imageSrc: "logo_pharos.png",
         position: "Mobile Developer (Intern)",
         time: "Aug - Dec 2024",
         institution: "PT. Pharos Indonesia",
@@ -30,6 +33,7 @@ export const experiences = [
           "MSIB Kampus Merdeka Batch 7. \n• Developed a widget for scanning barcodes used in inventory management with Flutter in HealthyOne App, improving product search efficiency by over 70%. This widget is integrated with a barcode reader device for scanning and reading barcode lines efficiently.\n• Improved the widget's UI in the HealthyOne App by reducing text size, margins, adding an info button to the dropdown, and adjusting the layout to display 4 items per row, optimizing content positioning for better usability.\n• Implemented a scroll system in the dropdown for load more functionality, prioritizing records already fetched from the frontend. The system identifies if all records and quantities have been pulled, avoiding unnecessary backend queries. If not, it queries the backend when scrolling reaches the end, ensuring no duplicate IDs or quantities are fetched and that the record count matches expectations.",
       },
       {
+        imageSrc: "logo_balam.jpg",
         position: "Software Engineer (Intern)",
         time: "Mar - Aug 2024",
         institution: "Bandar Lampung City Government",
@@ -37,6 +41,7 @@ export const experiences = [
           "• Designed the UI and developed the interface for the SDGs website for the Bandar Lampung city government, enabling data analysis and dashboard viewing for 17 goals and 400 indicators. \n• Collaborated on implementation with Laravel, Bootstrap, and MySQL, ensuring seamless integration and a 25% improvement in performance. \n• Developed 3 dashboard features for predictions, comparative analysis, and geospatial data distribution to monitor performance based on input data. \n• Presented and demonstrated the website to over 15 regional government organizations in Bandar Lampung, receiving positive feedback and securing commitment for 2 future updates and enhancements.",
       },
       {
+        imageSrc: "logo_tanamify.png",
         position: "Mobile Developer",
         time: "Apr - Jul 2024",
         institution: "Tanamify ID",
@@ -44,6 +49,7 @@ export const experiences = [
           "• Designed over 10 user interfaces and experiences for the Tanamify app using Figma.\n• Developed the mobile application with Kotlin and XML using MVVM architecture, improving performance by 30% and ensuring usability.\n• Integrated 2 machine learning models, including image classification and artificial neural network (ANN), into the Android app using TFLite.\n• Integrated 4 APIs from the backend server for authentication and history tracking.",
       },
       {
+        imageSrc: "logo_swd.png",
         position: "IT Support Technician (Intern)",
         time: "Aug 2019 - Mar 2020",
         institution: "SMK Swadhipa 2 Natar",
@@ -56,6 +62,7 @@ export const experiences = [
     category: "Organizational/Volunteer",
     items: [
       {
+        imageSrc: "logo_hmif.png",
         position: "Staff of Technopreneur division",
         time: "Apr 2023- Des 2023",
         institution: "Himpunan Mahasiswa Informatika ITERA",
@@ -63,6 +70,7 @@ export const experiences = [
           "• Spearheaded the backend development of the Informatics study program website, creating and managing over 20 pages to streamline information dissemination. \n• Implemented frontend development for a voting website, ensuring usability and responsiveness across more than 4 pages. \n• Led a team of 9 developers for the HMIF ITERA website development, successfully completing all tasks on time and within scope.",
       },
       {
+        imageSrc: "logo_km.jpeg",
         position: "Staff of Information Technology",
         time: "Mar 2023 - Des 2023",
         institution: "Cabinet of KM ITERA 2023/2024",
@@ -77,17 +85,12 @@ export const experiences = [
           "• Crafted a website for the student presidential election voting at the PEMIRA KM ITERA 2022 event at Institut Teknologi Sumatera, ensuring secure and efficient voting. \n• Integrated Tailwind CSS with CodeIgniter 3 for a seamless user experience during the voting process, successfully serving over 5,200 eligible student voters. \n• Completed the project within 2 months in collaboration with the frontend team, meeting all project milestones ahead of schedule.",
       },
       {
+        imageSrc: "logo_pplk.png",
         position: "Frontend Developer",
         time: "Jun - Aug 2022",
         institution: "PPLK ITERA 2022",
         description:
           "• Collaborated with a 7-member frontend team to develop a campus environment introduction website for new students, creating over 10 interactive and informative pages. \n• Developed a attendance system with HTML, JavaScript and Bootstrap CSS used by over 4800 new students, enhancing event management efficiency by 30%. \n• Implemented responsive design principles to ensure optimal user experience across various devices. ",
-      },
-      {
-        position: "Team Member",
-        time: "Sep 2021 - Des 2021",
-        institution: "Google Developer Student Club ITERA",
-        description: "Coba",
       },
     ],
   },

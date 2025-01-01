@@ -67,6 +67,7 @@ export default function Home() {
           {experience.items.map((item, idx) => (
             <Experience
               key={idx}
+              imageSrc={item.imageSrc ?? "default.png"}
               position={item.position}
               time={item.time}
               institution={item.institution}

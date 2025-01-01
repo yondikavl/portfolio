@@ -3,11 +3,13 @@
 import React, { useState } from "react";
 
 export const Experience = ({
+  imageSrc,
   position,
   time,
   institution,
   description,
 }: {
+  imageSrc: string;
   position: string;
   time: string;
   institution: string;
@@ -19,21 +21,7 @@ export const Experience = ({
     setIsOpen(!isOpen);
   };
 
-  // Function to determine the image source
-  const getImageSrc = (institution: string | undefined) => {
-    if (institution) {
-      return ["${institution}.png", "${institution}.jpg", "${institution}.jpeg"].find(
-        (src) => {
-          const img = new Image();
-          img.src = src;
-          return img.complete;
-        }
-      );
-    }
-    return "deafult.jpeg";
-  };
-
-  const imageSrc = getImageSrc(institution);
+  console.log("imageSrc", imageSrc);
 
   return (
     <div
@@ -43,14 +31,14 @@ export const Experience = ({
     >
       <div className="cursor-pointer" onClick={toggleAccordion}>
         <div className="flex flex-row items-center gap-4">
-          <div className="bg-white">
+          <div className="bg-white rounded-xl overflow-hidden">
             <img
               src={imageSrc}
               alt={institution || "Default"}
-              className="h-12 w-12 rounded-full object-cover"
+              className="h-12 w-12 object-cover"
             />
           </div>
-          <div className="flex flex-col justify-between text-whitey">
+          <div className="flex flex-col justify-between text-whitey w-full">
             <div className="flex flex-row justify-between">
               <p className="text-sm md:text-base">{position}</p>
               <p className="text-sm md:text-base">{time}</p>
