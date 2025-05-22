@@ -26,7 +26,7 @@ export const experiences = [
     items: [
       {
         imageSrc: "logo_pharos.png",
-        position: "Mobile Developer (Intern)",
+        position: "Frontend Developer (Intern)",
         time: "Aug - Dec 2024",
         institution: "PT. Pharos Indonesia",
         description:
