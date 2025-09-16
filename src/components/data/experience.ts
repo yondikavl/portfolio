@@ -30,7 +30,7 @@ export const experiences = [
         time: "Feb - Jul 2025",
         institution: "Institut Teknologi Sumatera",
         description:
-          "• Developed a custom IndoBERT NLP model to classify 1,143 Indonesian-language reviews (spam, fraud, promotion) with 97% accuracy and 97% F1-score. • Deployed REST API using FastAPI and integrated database using Prisma + MySQL. • Built responsive frontend with Vue.js (Web) and Kotlin (Android) achieving 90% success in black-box testing."
+          "• Developed a custom IndoBERT NLP model to classify 1,143 Indonesian-language reviews (spam, fraud, promotion) with 97% accuracy and 97% F1-score. \n• Deployed REST API using FastAPI and integrated database using Prisma + MySQL. \n• Built responsive frontend with Vue.js (Web) and Kotlin (Android) achieving 90% success in black-box testing."
       },
       {
         imageSrc: "logo_pharos.png",
