@@ -26,7 +26,7 @@ export const experiences = [
     items: [
       {
         imageSrc: "logo_itera.png",
-        position: "Full Stack Developer (Thesis)",
+        position: "Full Stack Developer",
         time: "Feb - Jul 2025",
         institution: "Institut Teknologi Sumatera",
         description:
