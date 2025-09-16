@@ -25,6 +25,14 @@ export const experiences = [
     category: "Work/Intern",
     items: [
       {
+        imageSrc: "logo_itera.png",
+        position: "Full Stack Developer (Thesis)",
+        time: "Feb - Jul 2025",
+        institution: "Institut Teknologi Sumatera",
+        description:
+          "• Developed a custom IndoBERT NLP model to classify 1,143 Indonesian-language reviews (spam, fraud, promotion) with 97% accuracy and 97% F1-score. • Deployed REST API using FastAPI and integrated database using Prisma + MySQL. • Built responsive frontend with Vue.js (Web) and Kotlin (Android) achieving 90% success in black-box testing."
+      },
+      {
         imageSrc: "logo_pharos.png",
         position: "Frontend Developer (Intern)",
         time: "Aug - Dec 2024",
