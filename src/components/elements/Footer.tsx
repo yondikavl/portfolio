@@ -6,9 +6,15 @@ export const Footer = () => {
   return (
     <>
       <div className="bottom-0 flex w-full flex-col items-center justify-between gap-4 bg-[#181818] py-6 text-[#BCBCBC] md:flex-row lg:px-72">
-        <div className="flex gap-4">
-          <p className=" text-whitey">2024 Yondika. All Right Reserved.</p>
+        <div className="flex flex-col gap-1">
+          <p className="text-white">
+            © 2024 Yondika. All Rights Reserved.
+          </p>
+          <p className="text-sm text-[#8d8d8d]">
+            Latest Update: May 7, 2026
+          </p>
         </div>
+
         <div className="flex gap-4">
           <Link
             href="https://www.instagram.com/yondikavl/"
@@ -17,6 +23,7 @@ export const Footer = () => {
           >
             <FaInstagram />
           </Link>
+
           <Link
             href="https://www.github.com/yondikavl/"
             target="_blank"
@@ -24,6 +31,7 @@ export const Footer = () => {
           >
             <FaGithub />
           </Link>
+
           <Link
             href="https://www.linkedin.com/in/yondikavl"
             target="_blank"

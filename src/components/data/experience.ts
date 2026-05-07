@@ -5,10 +5,10 @@ export const experiences = [
       {
         imageSrc: "logo_itera.png",
         position: "S1 Teknik Informatika",
-        time: "Aug 2021 - Present",
+        time: "Aug 2021 - Sep 2025",
         institution: "Institut Teknologi Sumatera",
         description:
-          "GPA : 3.61/4.00 \nRelevant Coursework : Object-Oriented Programming, Web Programming, Basic Software Development, Human-Computer Interaction, Algorithms and Data Structures, Database, Algorithms and Programming. ",
+          "GPA : 3.65/4.00 \nRelevant Coursework : Object-Oriented Programming, Web Programming, Basic Software Development, Human-Computer Interaction, Algorithms and Data Structures, Database, Algorithms and Programming, Mobile Development ",
       },
       {
         imageSrc: "logo_bangkit.jpg",
@@ -24,6 +24,14 @@ export const experiences = [
   {
     category: "Work/Intern",
     items: [
+      {
+        imageSrc: "logo_gerak.png",
+        position: "Android Developer",
+        time: "Oct 2025 - Present",
+        institution: "PT. Gerak Bersama Kita",
+        description:
+          "• Developed and maintained the Android application for the Gerak Bersama Kita platform, ensuring a seamless user experience and high performance. \n• Collaborated with cross-functional teams to design and implement new features. \n• Implemented best practices for code quality and performance optimization, leading to a 15% reduction in app crashes and improved overall stability.",
+      },
       {
         imageSrc: "logo_itera.png",
         position: "Full Stack Developer",

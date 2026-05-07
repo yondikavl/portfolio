@@ -1,13 +1,17 @@
 "use client";
 
 import React from "react";
-import { FaMobileAlt } from "react-icons/fa";
+import { FaLinkedin, FaMobileAlt } from "react-icons/fa";
 import { FaFile, FaGlobe, FaShapes, FaGithub } from "react-icons/fa6";
 import { Card } from "./Card";
 
 export const Hero = () => {
   const onClick = () => {
     window.open("https://github.com/yondikavl/", "_blank");
+  };
+
+  const onClickLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/yondikavl/", "_blank");
   };
 
   const onClickPdf = () => {
@@ -75,30 +79,35 @@ export const Hero = () => {
                 View Github
               </button>
               <button
+                onClick={onClickLinkedIn}
+                className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#3a3a3a] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
+              >
+                <FaLinkedin className="md:text-xl" />
+                View LinkedIn
+              </button>
+              {/* <button
                 onClick={onClickPdf}
                 className="flex min-h-12 min-w-20 items-center justify-center gap-4 rounded-lg border border-[#3a3a3a] bg-[#0f0f0f] px-4 py-2 hover:bg-[#af9d55] hover:font-bold hover:text-[#0f0f0f] md:text-xl"
               >
                 <FaFile className="md:text-xl" />
                 Portfolio PDF
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
         <div className="mt-6">
           <p className="text-justify text-sm md:text-lg">
-            An{" "}
-            <span className="font-bold">
-              undergraduate Informatics Engineering
-            </span>{" "}
-            program at the Sumatera Institute of Technology, passionate about
-            pursuing a career in development. Skilled in{" "}
-            <span className="font-bold">mobile development </span>
-            tools such as <span className="font-bold">Kotlin</span> and{" "}
+            A graduate of{" "}
+            <span className="font-bold">Informatics Engineering</span> from the
+            Sumatera Institute of Technology, passionate about pursuing a career
+            in software development. Skilled in{" "}
+            <span className="font-bold">mobile development</span> using tools
+            such as <span className="font-bold">Kotlin</span> and{" "}
             <span className="font-bold">Flutter</span>, as well as
             <span className="font-bold"> web development</span> using{" "}
-            <span className="font-bold"> React.js</span>. A detail-oriented
-            individual with a successful track record of managing several
-            projects fueled by a strong interest in mobile and web development.
+            <span className="font-bold">React.js</span>. A detail-oriented
+            individual with a proven track record of managing several projects,
+            driven by a strong interest in mobile and web development.
           </p>
         </div>
         <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
