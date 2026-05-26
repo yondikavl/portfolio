@@ -29,6 +29,7 @@ export const experiences = [
         position: "Android Developer",
         time: "Oct 2025 - Present",
         institution: "PT. Gerak Bersama Kita",
+        detailHref: "/experience/gerak",
         description:
           "• Developed and maintained the Android application for the Gerak Bersama Kita platform, ensuring a seamless user experience and high performance. \n• Collaborated with cross-functional teams to design and implement new features. \n• Implemented best practices for code quality and performance optimization, leading to a 15% reduction in app crashes and improved overall stability.",
       },

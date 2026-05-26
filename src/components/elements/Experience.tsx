@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 export const Experience = ({
@@ -8,12 +9,14 @@ export const Experience = ({
   time,
   institution,
   description,
+  detailHref,
 }: {
   imageSrc: string;
   position: string;
   time: string;
   institution: string;
   description: string;
+  detailHref?: string;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -59,6 +62,15 @@ export const Experience = ({
               </React.Fragment>
             ))}
           </p>
+          {detailHref && (
+            <Link
+              href={detailHref}
+              className="mt-3 inline-block text-sm font-medium text-goldy hover:underline"
+              onClick={(e) => e.stopPropagation()}
+            >
+              Lihat detail pekerjaan →
+            </Link>
+          )}
         </div>
       )}
     </div>

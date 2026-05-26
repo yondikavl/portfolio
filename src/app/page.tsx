@@ -72,6 +72,7 @@ export default function Home() {
               time={item.time}
               institution={item.institution}
               description={item.description}
+              detailHref={"detailHref" in item ? item.detailHref : undefined}
             />
           ))}
         </div>
