@@ -1,17 +1,24 @@
 "use client";
 
+import type { PortfolioContent, SkillIcon } from "@/lib/portfolio-types";
 import React from "react";
 import { FaLinkedin, FaMobileAlt } from "react-icons/fa";
-import { FaFile, FaGlobe, FaShapes, FaGithub } from "react-icons/fa6";
+import { FaGlobe, FaShapes, FaGithub } from "react-icons/fa6";
 import { Card } from "./Card";
 
-export const Hero = () => {
+const cardIconMap: Record<SkillIcon, React.ReactNode> = {
+  globe: <FaGlobe className="md:text-3xl" />,
+  mobile: <FaMobileAlt className="md:text-3xl" />,
+  shapes: <FaShapes className="md:text-3xl" />,
+};
+
+export const Hero = ({ hero }: { hero: PortfolioContent["hero"] }) => {
   const onClick = () => {
-    window.open("https://github.com/yondikavl/", "_blank");
+    window.open(hero.githubUrl, "_blank");
   };
 
   const onClickLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/yondikavl/", "_blank");
+    window.open(hero.linkedinUrl, "_blank");
   };
 
   const onClickPdf = () => {
@@ -57,17 +64,17 @@ export const Hero = () => {
           <div>
             <div className="text-center">
               <h1 className="mb-4 text-xl text-[#af9d55] md:text-5xl">
-                Hi, Iam
+                {hero.greeting}
               </h1>
               <h1
                 className="text-7xl font-bold text-goldy md:text-9xl"
                 data-aos="zoom-in"
                 data-aos-duration="1500"
               >
-                Yondika
+                {hero.name}
               </h1>
               <h1 className="mb-4 text-xl text-[#af9d55] md:text-5xl">
-                Vio Landa
+                {hero.subtitle}
               </h1>
             </div>
             <div className="mt-8 flex justify-center gap-4">
@@ -96,33 +103,16 @@ export const Hero = () => {
           </div>
         </div>
         <div className="mt-6">
-          <p className="text-justify text-sm md:text-lg">
-            A graduate of{" "}
-            <span className="font-bold">Informatics Engineering</span> from the
-            Sumatera Institute of Technology, passionate about pursuing a career
-            in software development. Skilled in{" "}
-            <span className="font-bold">mobile development</span> using tools
-            such as <span className="font-bold">Kotlin</span> and{" "}
-            <span className="font-bold">Flutter</span>, as well as
-            <span className="font-bold"> web development</span> using{" "}
-            <span className="font-bold">React.js</span>. A detail-oriented
-            individual with a proven track record of managing several projects,
-            driven by a strong interest in mobile and web development.
-          </p>
+          <p className="text-justify text-sm md:text-lg">{hero.bio}</p>
         </div>
         <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
-          <Card
-            icon={<FaGlobe className="md:text-3xl" />}
-            text="Web Development"
-          />
-          <Card
-            icon={<FaMobileAlt className="md:text-3xl" />}
-            text="Mobile Development"
-          />
-          <Card
-            icon={<FaShapes className="md:text-3xl" />}
-            text="UIUX Design"
-          />
+          {hero.cards.map((card) => (
+            <Card
+              key={card.text}
+              icon={cardIconMap[card.icon]}
+              text={card.text}
+            />
+          ))}
         </div>
       </main>
 

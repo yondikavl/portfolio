@@ -1,14 +1,16 @@
-import { Maintenance } from "@/components/ui/Maintenance";
-import React from "react";
-import type { Metadata } from "next";
-import { Button } from "@/components/elements/Button";
 import { CardWork } from "@/components/elements/CardWork";
+import { getPortfolio } from "@/lib/portfolio-store";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Work | Yondika's Portfolio",
 };
 
-const page = () => {
+export const dynamic = "force-dynamic";
+
+export default async function WorkPage() {
+  const { works } = await getPortfolio();
+
   return (
     <main>
       <img
@@ -24,79 +26,17 @@ const page = () => {
         style={{ zIndex: -1 }}
       />
       <div className="mx-6 flex flex-wrap items-center justify-center gap-4 py-40 sm:mx-32 md:mx-96">
-        <CardWork
-          image="Tanamify.png"
-          project="Tanamify App"
-          category="Mobile Development"
-          tools={["kotlin.svg", "tensorflow.svg"]}
-          href={"https://github.com/yondikavl/Tanamify-Mobile-App"}
-        />
-        <CardWork
-          image="Mantory_Preview.png"
-          project="Mantory App"
-          category="Mobile Development"
-          tools={["flutter.svg"]}
-          href={"https://github.com/yondikavl/Mantory-Mobile-App"}
-        />
-        <CardWork
-          image="narasiqu.png"
-          project="Narasiqu App"
-          category="Mobile Development"
-          tools={["kotlin.svg"]}
-          href={"https://github.com/yondikavl/Narasiqu-Mobile-App"}
-        />
-        <CardWork
-          image="github-user-app-mobile.png"
-          project="Github User App"
-          category="Mobile Development"
-          tools={["kotlin.svg"]}
-          href={"https://github.com/yondikavl/Github-User-Mobile-App"}
-        />
-        <CardWork
-          image="aritmateka.png"
-          project="Aritmateka"
-          category="Mobile Development"
-          tools={["kotlin.svg"]}
-          href={"https://github.com/yondikavl/Aritmateka-Mobile-App"}
-        />
-        <CardWork
-          image="web-pemira.png"
-          project="Website Pemira KM ITERA 2022"
-          category="Web Development"
-          tools={["html.svg", "css.svg", "tailwind.svg", "javascript.svg"]}
-          href={"https://github.com/masqomar21/pemira-KM-ITERA-2022"}
-        />
-        <CardWork
-          image="website-desa-way-kalam.png"
-          project="Website Desa Way Kalam"
-          category="Web Development"
-          tools={["html.svg", "css.svg", "tailwind.svg", "javascript.svg"]}
-          href={"https://github.com/yondikavl/Website-Desa-WayKalam"}
-        />
-        <CardWork
-          image="web-desa-sidorejo.png"
-          project="Website Desa Sidorejo"
-          category="Web Development"
-          tools={["next.svg", "tailwind.svg", "javascript.svg"]}
-          href={"https://github.com/yondikavl/ksi02-sidorejo"}
-        />
-        <CardWork
-          image="github-user-app-mobile.png"
-          project="ToDo Web App"
-          category="Web Development"
-          tools={["html.svg", "css.svg", "javascript.svg"]}
-          href={"https://github.com/yondikavl/react-todo-app"}
-        />
-        <CardWork
-          image="personal-portfolio.png"
-          project="Personal Portfolio"
-          category="Web Development"
-          tools={["next.svg", "tailwind.svg", "typescript.svg"]}
-          href={"https://github.com/yondikavl/yondikas-portfolio"}
-        />
+        {works.map((work) => (
+          <CardWork
+            key={work.project + work.href}
+            image={work.image}
+            project={work.project}
+            category={work.category}
+            tools={work.tools}
+            href={work.href}
+          />
+        ))}
       </div>
     </main>
   );
-};
-
-export default page;
+}

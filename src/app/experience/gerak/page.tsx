@@ -1,4 +1,5 @@
 import { GerakRecap } from "@/components/elements/GerakRecap";
+import { getPortfolio } from "@/lib/portfolio-store";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
     "Android developer work recap at PT. Gerak Bersama Kita — Gerak Pro, whitelabel, and major feature delivery.",
 };
 
-export default function GerakExperiencePage() {
+export const dynamic = "force-dynamic";
+
+export default async function GerakExperiencePage() {
+  const { gerakRecap } = await getPortfolio();
+
   return (
     <main className="relative mx-6 py-32 sm:mx-20 lg:mx-auto lg:max-w-3xl lg:px-4">
       <img
@@ -36,18 +41,18 @@ export default function GerakExperiencePage() {
       <div className="mb-4 flex items-center gap-3">
         <div className="overflow-hidden rounded-xl bg-white">
           <img
-            src="/logo_gerak.png"
-            alt="PT. Gerak Bersama Kita"
+            src={gerakRecap.meta.logo}
+            alt={gerakRecap.meta.company}
             className="h-12 w-12 object-cover"
           />
         </div>
         <div>
-          <p className="text-sm text-[#7c7c7c]">PT. Gerak Bersama Kita</p>
-          <p className="font-medium text-goldy">Android Developer</p>
+          <p className="text-sm text-[#7c7c7c]">{gerakRecap.meta.company}</p>
+          <p className="font-medium text-goldy">{gerakRecap.meta.role}</p>
         </div>
       </div>
 
-      <GerakRecap />
+      <GerakRecap gerak={gerakRecap} />
     </main>
   );
 }

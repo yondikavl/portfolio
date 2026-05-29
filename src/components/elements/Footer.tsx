@@ -1,8 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export const Footer = () => {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <>
       <div className="bottom-0 flex w-full flex-col items-center justify-between gap-4 bg-[#181818] py-6 text-[#BCBCBC] md:flex-row lg:px-72">

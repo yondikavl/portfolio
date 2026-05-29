@@ -7,15 +7,10 @@ import {
   Smartphone,
 } from "lucide-react";
 import { FaAndroid } from "react-icons/fa";
-import {
-  gerakAchievements,
-  type GerakAchievementIcon,
-  gerakRecapMeta,
-  gerakReleases,
-  gerakStats,
-  gerakTechnologies,
-  gerakTimeline,
-} from "@/components/data/gerak-recap";
+import type {
+  GerakAchievementIcon,
+  GerakRecap as GerakRecapData,
+} from "@/lib/portfolio-types";
 
 const achievementIcons: Record<GerakAchievementIcon, typeof Activity> = {
   heart: Activity,
@@ -50,26 +45,26 @@ function ReleaseTag({ tag }: { tag: "released" | "whitelabel" }) {
   );
 }
 
-export function GerakRecap() {
+export function GerakRecap({ gerak }: { gerak: GerakRecapData }) {
   return (
     <div className="py-6">
       <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
         <div>
           <h1 className="text-2xl font-medium text-whitey md:text-[22px]">
-            {gerakRecapMeta.title}
+            {gerak.meta.title}
           </h1>
           <p className="mt-1 text-sm text-[#7c7c7c]">
-            {gerakRecapMeta.period} · {gerakRecapMeta.duration}
+            {gerak.meta.period} · {gerak.meta.duration}
           </p>
         </div>
         <span className="inline-flex items-center gap-1.5 rounded-lg bg-blue-500/15 px-3 py-1 text-xs font-medium text-blue-400">
           <FaAndroid aria-hidden />
-          {gerakRecapMeta.badge}
+          {gerak.meta.badge}
         </span>
       </div>
 
       <div className="mb-8 grid grid-cols-[repeat(auto-fit,minmax(130px,1fr))] gap-2.5">
-        {gerakStats.map((stat) => (
+        {gerak.stats.map((stat) => (
           <div
             key={stat.label}
             className="rounded-lg bg-dark p-4"
@@ -88,7 +83,7 @@ export function GerakRecap() {
       <section className="mb-8">
         <SectionTitle>Phase timeline</SectionTitle>
         <div className="flex flex-col">
-          {gerakTimeline.map((item, index) => (
+          {gerak.timeline.map((item, index) => (
             <div
               key={item.title}
               className="flex gap-3.5 pb-5 last:pb-0"
@@ -101,7 +96,7 @@ export function GerakRecap() {
                   className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full"
                   style={{ background: item.dotColor }}
                 />
-                {index < gerakTimeline.length - 1 && (
+                {index < gerak.timeline.length - 1 && (
                   <div className="mt-1 w-px flex-1 bg-[#3a3a3a]" />
                 )}
               </div>
@@ -122,7 +117,7 @@ export function GerakRecap() {
       <section className="mb-8">
         <SectionTitle>Key technical achievements</SectionTitle>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2.5">
-          {gerakAchievements.map((card) => {
+          {gerak.achievements.map((card) => {
             const Icon = achievementIcons[card.icon];
             return (
               <div
@@ -148,7 +143,7 @@ export function GerakRecap() {
       <section className="mb-8">
         <SectionTitle>App releases</SectionTitle>
         <div className="rounded-xl border border-[#3a3a3a] bg-[#0f0f0f] px-5 py-3">
-          {gerakReleases.map((release) => (
+          {gerak.releases.map((release) => (
             <div
               key={release.version}
               className="flex flex-wrap items-center gap-2 border-b border-[#3a3a3a] py-2.5 last:border-b-0 sm:flex-nowrap sm:gap-3"
@@ -168,7 +163,7 @@ export function GerakRecap() {
       <section>
         <SectionTitle>Technologies & tools used</SectionTitle>
         <div className="flex flex-wrap gap-1 pt-0.5">
-          {gerakTechnologies.map((tech, i) => (
+          {gerak.technologies.map((tech, i) => (
             <span
               key={tech}
               className="inline-flex items-center gap-1 rounded-full border border-[#3a3a3a] px-2.5 py-1 text-[11px] text-[#a0a0a0]"

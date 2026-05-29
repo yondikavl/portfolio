@@ -24,8 +24,6 @@ export const Experience = ({
     setIsOpen(!isOpen);
   };
 
-  console.log("imageSrc", imageSrc);
-
   return (
     <div
       className="mb-2 rounded-xl border border-[#3a3a3a] p-5 hover:bg-dark"

@@ -1,21 +1,23 @@
-import { experiences } from "@/components/data/experience";
 import { Experience } from "@/components/elements/Experience";
 import { Hero } from "@/components/elements/Hero";
-import { Skills } from "@/components/elements/Skills";
-import { FaMobileAlt } from "react-icons/fa";
-import { FaGlobe, FaShapes } from "react-icons/fa6";
+import { HomeSkills } from "@/components/elements/HomeSkills";
+import { getPortfolio } from "@/lib/portfolio-store";
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const content = await getPortfolio();
+
   return (
     <main className="mx-6 flex flex-col items-center justify-between pt-12 sm:mx-20 md:pt-0 lg:mx-80">
-      <Hero />
+      <Hero hero={content.hero} />
       <div className="mt-8 flex justify-center md:mt-0">
         <p
           className="italic text-whitey md:text-xl"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >
-          “Work for money, Develop for love”
+          &ldquo;{content.quote}&rdquo;
         </p>
       </div>
 
@@ -30,36 +32,13 @@ export default function Home() {
         Skills
       </h2>
       <div className="flex w-full flex-col justify-center gap-4 md:flex-row md:py-12">
-        <Skills
-          icon={<FaGlobe className="text-3xl text-whitey" />}
-          text="Web Development"
-          tools={[
-            "html.svg",
-            "css.svg",
-            "javascript.svg",
-            "typescript.svg",
-            "next.svg",
-            "react.svg",
-            "tailwind.svg",
-            "bootstrap.svg",
-          ]}
-        />
-        <Skills
-          icon={<FaMobileAlt className="text-3xl text-whitey" />}
-          text="Mobile Development"
-          tools={["kotlin.svg", "flutter.svg"]}
-        />
-        <Skills
-          icon={<FaShapes className="text-3xl text-whitey" />}
-          text="UIUX Design"
-          tools={["figma.svg"]}
-        />
+        <HomeSkills skills={content.skills} />
       </div>
 
       <h2 className="pb-8 pt-24 text-center text-4xl font-bold text-goldy">
         Experience
       </h2>
-      {experiences.map((experience, index) => (
+      {content.experiences.map((experience, index) => (
         <div key={index} className="w-full gap-4 md:py-4">
           <h3 className="py-4 text-xl font-bold text-goldy">
             {experience.category}
@@ -72,7 +51,7 @@ export default function Home() {
               time={item.time}
               institution={item.institution}
               description={item.description}
-              detailHref={"detailHref" in item ? item.detailHref : undefined}
+              detailHref={item.detailHref}
             />
           ))}
         </div>
@@ -81,25 +60,25 @@ export default function Home() {
       <h2 className="pb-8 pt-24 text-center text-4xl font-bold text-goldy">
         Achievement
       </h2>
-      <div
-        className="w-full py-2 md:py-8"
-        data-aos="zoom-in"
-        data-aos-duration="1500"
-      >
-        <div className="flex flex-col justify-between text-whitey md:flex-row">
-          <p className="text-sm md:text-base">
-            Finalist in the User Experience Design division GEMASTIK XVI 2023
+      {content.achievements.map((achievement, index) => (
+        <div
+          key={index}
+          className="w-full py-2 md:py-8"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <div className="flex flex-col justify-between text-whitey md:flex-row">
+            <p className="text-sm md:text-base">{achievement.title}</p>
+            <p className="text-sm md:text-base">{achievement.date}</p>
+          </div>
+          <p className="text-sm text-[#7c7c7c] md:text-base">
+            {achievement.institution}
           </p>
-          <p className="text-sm md:text-base">September 2023</p>
         </div>
-        <p className="text-sm text-[#7c7c7c] md:text-base">
-          Pusat Prestasi Nasional, Kementerian Pendidikan, Kebudayaan, Riset,
-          dan Teknologi
-        </p>
-      </div>
+      ))}
 
       <img
-        src="my-pic.png"
+        src={content.homeImage}
         alt="Foto Yondika"
         className="w-full py-8"
         data-aos="zoom-in"
